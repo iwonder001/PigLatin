@@ -16,6 +16,8 @@ public class LabSix {
 		String translate = input.nextLine();
 		
 		//convert all text to lower case
+		translate.toLowerCase();
+		System.out.println(translate.toLowerCase());
 		//do if/else loop to check if begins with a vowel
 		//if begins with vowel add "way'' to end
 		// else then a constant
