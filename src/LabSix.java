@@ -34,52 +34,69 @@ public class LabSix {
 		// String finalVowel;
 		// String first = translate.charAt(0);
 		int vowelPosition = translate.length();
-		
-		if (translate.startsWith("u") || translate.startsWith("a") || translate.startsWith("e") //checking first letter in word if its a vowel then add "way"
-				|| translate.startsWith("i") || translate.startsWith("o")) {
+		String arrayWords = null;
+		int everyWord = arrayWords.length();
+		int everyWorld = 0;
 
-			// finalVowel = translate + StringStatement;
-			System.out.println(translate + str);
-		} else {
-			for (int i =0; i < vowelPosition; i++) { //count through each letter until I get a vowel, then I want it to add "ay" at end
-			if (!(translate.startsWith("a")) && !(translate.startsWith("e")) && !(translate.startsWith("i"))
-					&& !(translate.startsWith("o")) && !(translate.startsWith("u"))) {
-				// String f =translate.charAt(0);
-				// translate.concat(first);
-				char firstLetter = translate.charAt(0); // get first letter
-				translate = translate.substring(1); // remove first letter from
-													// the user input string
+		for (int x = 0; x < everyWorld; x++) {
+			// checking first letter in word if its a vowel the add "way"
+			if (translate.startsWith("u") || translate.startsWith("a") || translate.startsWith("e") 
+					|| translate.startsWith("i") || translate.startsWith("o")) {
 
-				translate = translate + firstLetter; // add first letter to end
-														// of user input string
-				
-				System.out.println(translate);
-				
+				// finalVowel = translate + StringStatement;
+				System.out.println(translate + str);
+			} else {
+				for (int i = 0; i < vowelPosition; i++) { // count through each
+															// letter until I
+															// get a vowel, then
+															// I want it to add
+															// "ay" at end
+					if (!(translate.startsWith("a")) && !(translate.startsWith("e")) && !(translate.startsWith("i"))
+							&& !(translate.startsWith("o")) && !(translate.startsWith("u"))) {
+						// String f =translate.charAt(0);
+						// translate.concat(first);
+						char firstLetter = translate.charAt(0); // get first
+																// letter
+						translate = translate.substring(1); // remove first
+															// letter from
+															// the user input
+															// string
 
-			} else { 
-				translate = translate + "ay";
-				
-				System.out.println(translate);
-				break;
-				// translate = translate + firstLetter + "ay"; //add first
-				// letter and "ay" to end of user input string
+						translate = translate + firstLetter; // add first letter
+																// to end
+																// of user input
+																// string
 
-			}//2 if/else statement
-			}//for loop
-			// System.out.println(translate + str2);
+						System.out.println(translate);
 
-		} // 1 if/else statement
+					} else {
+						translate = translate + "ay";
 
-		// if begins with vowel add "way'' to end
-		// else then a constant
-		// nestle a for loop into constant to check for each vowel separately
-		// and if not a vowel then then add to end
-		// of the word, and keep looping until hit a vowel then end the loop
-		// (break).
-		// ask if want to go again.
-		// add for loop after to break up sentence into arrays and search each
-		// word individually.
+						System.out.println(translate);
+						break;
+						// translate = translate + firstLetter + "ay"; //add
+						// first
+						// letter and "ay" to end of user input string
 
-	}// psvm
+					} // 2 if/else statement
+				} // 2 for loop
+					// System.out.println(translate + str2);
 
+			} // 1 if/else statement
+
+			// if begins with vowel add "way'' to end
+			// else then a constant
+			// nestle a for loop into constant to check for each vowel
+			// separately
+			// and if not a vowel then then add to end
+			// of the word, and keep looping until hit a vowel then end the loop
+			// (break).
+			// ask if want to go again.
+			// add for loop after to break up sentence into arrays and search
+			// each
+			// word individually.
+
+		} // 1 for loop
+
+	}// psmv
 }// class
