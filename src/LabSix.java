@@ -29,6 +29,7 @@ public class LabSix {
 		StringBuffer str1 = new StringBuffer("way");
 		//StringBuffer str2 = new StringBuffer("a", "e");
 		String str = "way";
+		String str2 = "ay";
 		//String StringStatement = "way";
 		//String finalVowel;
 			
@@ -37,6 +38,12 @@ public class LabSix {
 			
 			//finalVowel = translate + StringStatement;
 			System.out.println(translate + str);
+		}else {
+			
+			if (!(translate.startsWith("a")) || !(translate.startsWith("e")) || !(translate.startsWith("i")) || !(translate.startsWith("o")) || !(translate.startsWith("u"))); {
+						
+			}
+			System.out.println(translate + str2);
 			
 		}//if/else statement
 		
