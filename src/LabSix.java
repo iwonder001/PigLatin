@@ -16,8 +16,8 @@ public class LabSix {
 		String translate = input.nextLine();
 		
 		//convert all text to lower case
-		translate.toLowerCase();
-		System.out.println(translate.toLowerCase());
+		translate = translate.toLowerCase();
+		System.out.println(translate);
 		
 		//do if/else loop to check if begins with a vowel
 		String vow1= "a";
@@ -29,16 +29,14 @@ public class LabSix {
 		StringBuffer str1 = new StringBuffer("way");
 		//StringBuffer str2 = new StringBuffer("a", "e");
 		String str = "way";
-		String StringStatement = "way";
-		String finalVowel;
+		//String StringStatement = "way";
+		//String finalVowel;
+			
 		
-	
-		
-		
-		if (translate.startsWith("u")) {
+		if (translate.startsWith("u") || translate.startsWith("a") || translate.startsWith("e") || translate.startsWith("i") || translate.startsWith("o") ) {
 			
 			//finalVowel = translate + StringStatement;
-			System.out.println(translate+ str);
+			System.out.println(translate + str);
 			
 		}//if/else statement
 		
@@ -47,6 +45,7 @@ public class LabSix {
 		//nestle a for loop into constant to check for each vowel separately and if not a vowel then then add to end 
 		//of the word, and keep looping until hit a vowel then end the loop (break).
 		//ask if want to go again.
+		// add for loop after to break up sentence into arrays and search each word individually.
 		
 		
 	}//psvm
