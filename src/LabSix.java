@@ -34,7 +34,7 @@ public class LabSix {
 		// String finalVowel;
 		// String first = translate.charAt(0);
 		int vowelPosition = translate.length();
-
+		
 		if (translate.startsWith("u") || translate.startsWith("a") || translate.startsWith("e") //checking first letter in word if its a vowel then add "way"
 				|| translate.startsWith("i") || translate.startsWith("o")) {
 
@@ -57,7 +57,10 @@ public class LabSix {
 				
 
 			} else { 
-				System.out.println("Ho");
+				translate = translate + "ay";
+				
+				System.out.println(translate);
+				break;
 				// translate = translate + firstLetter + "ay"; //add first
 				// letter and "ay" to end of user input string
 
