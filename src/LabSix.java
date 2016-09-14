@@ -18,7 +18,30 @@ public class LabSix {
 		//convert all text to lower case
 		translate.toLowerCase();
 		System.out.println(translate.toLowerCase());
+		
 		//do if/else loop to check if begins with a vowel
+		String vow1= "a";
+		String vow2= "e";
+		String vow3= "i";
+		String vow4= "o";
+		String vow5= "u";
+		String vowel = vow1+vow2+vow3+vow4+vow5;
+		StringBuffer str1 = new StringBuffer("way");
+		//StringBuffer str2 = new StringBuffer("a", "e");
+		String str = "way";
+		String StringStatement = "way";
+		String finalVowel;
+		
+	
+		
+		
+		if (translate.startsWith("u")) {
+			
+			//finalVowel = translate + StringStatement;
+			System.out.println(translate+ str);
+			
+		}//if/else statement
+		
 		//if begins with vowel add "way'' to end
 		// else then a constant
 		//nestle a for loop into constant to check for each vowel separately and if not a vowel then then add to end 
