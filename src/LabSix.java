@@ -18,6 +18,8 @@ public class LabSix {
 		// convert all text to lower case
 		translate = translate.toLowerCase();
 		System.out.println(translate);
+		
+		String cont; //use for the do/while loop
 
 		// do if/else loop to check if begins with a vowel
 		String vow1 = "a";
@@ -34,17 +36,23 @@ public class LabSix {
 		// String finalVowel;
 		// String first = translate.charAt(0);
 		int vowelPosition = translate.length();
-		String arrayWords = null;
-		int everyWord = arrayWords.length();
-		int everyWorld = 0;
-
-		for (int x = 0; x < everyWorld; x++) {
+		String[] arrayWords;
+		translate.split(" "); // Using String Split Method to split up a
+								// sentence by each space in between.
+		arrayWords = translate.split(" ");// making it into an array around but
+											// need to assign it to a variable
+											// so I can use later.
+		// int everyWord = arrayWords.length();
+		// int everyWorld = 0;
+		do {
+		for (int x = 0; x < arrayWords.length; x++) {
+			translate = arrayWords[x];
 			// checking first letter in word if its a vowel the add "way"
-			if (translate.startsWith("u") || translate.startsWith("a") || translate.startsWith("e") 
+			if (translate.startsWith("u") || translate.startsWith("a") || translate.startsWith("e")
 					|| translate.startsWith("i") || translate.startsWith("o")) {
 
 				// finalVowel = translate + StringStatement;
-				System.out.println(translate + str);
+				translate = translate + str;
 			} else {
 				for (int i = 0; i < vowelPosition; i++) { // count through each
 															// letter until I
@@ -57,26 +65,25 @@ public class LabSix {
 						// translate.concat(first);
 						char firstLetter = translate.charAt(0); // get first
 																// letter
+
 						translate = translate.substring(1); // remove first
-															// letter from
-															// the user input
-															// string
+															// letter from the
+															// user input string
 
 						translate = translate + firstLetter; // add first letter
-																// to end
-																// of user input
+																// to end of
+																// user input
 																// string
 
-						System.out.println(translate);
+						// System.out.println(translate);
 
 					} else {
 						translate = translate + "ay";
-
-						System.out.println(translate);
+						//Test print to see if variables are working properly
+						// System.out.println("Line 81" + translate);
 						break;
-						// translate = translate + firstLetter + "ay"; //add
-						// first
-						// letter and "ay" to end of user input string
+						// translate = translate + firstLetter + "ay"; 
+						//add first letter and "ay" to end of user input string
 
 					} // 2 if/else statement
 				} // 2 for loop
@@ -95,8 +102,9 @@ public class LabSix {
 			// add for loop after to break up sentence into arrays and search
 			// each
 			// word individually.
-
+			System.out.print(translate + " ");
 		} // 1 for loop
-
+	} while (cont.equals("y"));  //do/while loop
 	}// psmv
-}// class
+
+//}// class
